@@ -1,0 +1,1163 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Ubuntu", sans-serif;
+
+}
+
+header {
+    background-color: rgb(133, 0, 0);
+    padding: 15px;
+    font-size: 12px;
+
+    color: white;
+}
+
+.all {
+    display: flex;
+    padding: 10px;
+
+}
+
+.menu {
+    display: block;
+}
+
+.nav {
+    display: flex;
+    overflow: hidden;
+
+
+}
+
+.nav a {
+
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav a:hover,
+.about:hover .b {
+    color: #b99663;
+}
+
+.about {
+    padding: 13px;
+
+
+
+}
+
+.b {
+    background-color: inherit;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.b-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    background-color: white;
+}
+
+.b-content a {
+    text-decoration: none;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+
+.b-content a:hover {
+    background-color: #ddd;
+}
+
+.about:hover .b-content {
+    display: block;
+}
+
+.rendu {
+    display: flex;
+}
+
+.in {
+    display: flex;
+    z-index: 1;
+    font-size: small;
+    margin-left: 30px;
+    margin: 10px;
+}
+
+.in a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: 700;
+    font-family: 'ubuntu', sans-serif;
+    margin-top: 3px;
+}
+
+.rendu .in a:hover {
+    color: burlywood;
+}
+
+.in h1 {
+    color: #1E73BE;
+    font-family: 'merriweather';
+    font-size: 22px;
+    font-weight: normal;
+    margin-left: 20px;
+    padding: 1px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+
+}
+
+.y {
+
+    display: flex;
+    position: absolute;
+    top: 90px;
+    left: 61%;
+
+
+}
+
+.blink {
+    animation: blinker 1.0s linear infinite;
+    color: black;
+    background-color: #ffe704;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@keyframes blinker {
+    70% {
+        opacity: 0;
+    }
+}
+
+.ncontent {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(35, 40, 70);
+    color: white;
+    padding: 10px;
+    height: 130px;
+
+}
+
+.ncontent h4 {
+    position: relative;
+    top: 30px;
+    font-size: small;
+    font-weight: normal;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.30s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+.programs {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgb(244, 244, 244);
+    height: 150px;
+    color: black;
+}
+
+.programs h1 {
+    font-family: 'merriweather';
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.programs p {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    font-size: small;
+}
+
+.programs button {
+    padding: 18px;
+    width: 150px;
+    position: relative;
+    top: 60px;
+    background-color: rgb(95, 1, 51);
+    color: white;
+    font-size: medium;
+}
+
+.Admission {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    height: 500px;
+}
+
+.aone {
+    position: relative;
+    left: 40px;
+    top: 50px;
+}
+
+.atwo {
+    position: relative;
+    left: 150px;
+    top: 50px;
+    line-height: 30px;
+    max-width: 550px;
+
+}
+
+.atwo h1 {
+    font-family: 'merriweather';
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.atwo h4 {
+    margin-top: 30px;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.atwo p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 50px;
+}
+
+.Admission .atwo button {
+    padding: 10px;
+    position: relative;
+    top: 50px;
+    right: 70px;
+    border-radius: 5px;
+    width: 125px;
+    background-color: #ddd;
+}
+
+.atwo p i {
+    color: rgb(173, 153, 129);
+}
+
+.srm {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.coach {
+    display: flex;
+
+}
+
+.choose {
+    width: 68%;
+    height: 450px;
+    background-color: whitesmoke;
+}
+
+.choose span {
+    color: rgb(95, 1, 51);
+}
+
+.choose h1 {
+    display: flex;
+    position: relative;
+    left: 300px;
+    top: 30px;
+    font-weight: normal;
+    font-family: 'merriweather';
+
+}
+
+.choose hr {
+    display: inline-flex;
+    position: relative;
+    left: 400px;
+    top: 30px;
+
+
+}
+
+.nos {
+    position: relative;
+    top: 100px;
+    left: 30px;
+    margin: 30px;
+    line-height: 20px;
+}
+
+.noo {
+    position: relative;
+    top: 100px;
+    left: 30px;
+    margin: 30px;
+    line-height: 20px;
+}
+
+.no {
+    position: relative;
+    top: 100px;
+    left: 30px;
+    margin: 30px;
+    line-height: 20px;
+}
+
+.nos h2 {
+    font-family: 'ubuntu', sans-serif;
+    font-size: 60px;
+    font-weight: normal;
+    color: rgb(95, 1, 51);
+}
+
+.nos h4 {
+    margin-top: 20px;
+    color: gray;
+}
+
+.nos h6 {
+    color: rgb(53, 51, 51);
+    font-family: 'merriweather';
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.noo h2 {
+    font-family: 'ubuntu', sans-serif;
+    font-size: 60px;
+    font-weight: normal;
+    color: rgb(95, 1, 51);
+}
+
+.noo h4 {
+    margin-top: 20px;
+    color: gray;
+}
+
+.noo h6 {
+    color: rgb(53, 51, 51);
+    font-family: 'merriweather';
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.no h2 {
+    font-family: 'ubuntu', sans-serif;
+    font-size: 60px;
+    font-weight: normal;
+    color: rgb(95, 1, 51);
+}
+
+.no h4 {
+    margin-top: 20px;
+    color: gray;
+}
+
+.no h6 {
+    color: rgb(53, 51, 51);
+    font-family: 'merriweather';
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+
+
+.query {
+    border: 3px solid rgb(207, 209, 211);
+    width: 350px;
+    background-color: #ffff;
+    margin-top: 20px;
+
+
+}
+
+.query h3 {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    font-family: 'merriweather';
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.query h4 {
+    margin-left: 100px;
+    font-family: 'merriweather';
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.query p {
+    margin-top: 20px;
+    margin-left: 40px;
+    line-height: 30px;
+}
+
+.query button {
+    padding: 15px;
+    width: 120px;
+    position: relative;
+    top: 70px;
+    left: 120px;
+    background-color: white;
+    border: 1px solid rgb(95, 1, 51);
+}
+
+.query button:hover {
+    background-color: rgb(95, 1, 51);
+    color: white;
+}
+
+.leftt {
+    border: whitesmoke;
+    width: 40px;
+    border-right: 0;
+    background-color: whitesmoke;
+}
+
+.late {
+    height: 170px;
+    margin-top: 20px;
+}
+
+.late h1 {
+    font-family: 'merriweather';
+    font-size: 26px;
+    font-weight: normal;
+    position: relative;
+    top: 40px;
+
+}
+
+.late h1 span {
+    color: rgb(95, 1, 51);
+
+}
+
+.late hr {
+    display: inline-flex;
+
+    position: relative;
+    left: 620px;
+    top: 40px;
+}
+
+.cert {
+    display: block;
+}
+
+.whole {
+    background-color: white;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.img {
+    margin-left: 30px;
+}
+
+.days {
+    margin-left: 10px;
+    width: 50%;
+    background-color: whitesmoke;
+}
+
+.days h1 {
+    position: relative;
+    top: 40px;
+    left: 40px;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.button {
+
+    background-color: whitesmoke;
+    width: 300px;
+}
+
+
+.button h3 {
+    position: relative;
+    top: 100px;
+    left: 20px;
+}
+
+.button button {
+    background-color: #222845;
+    color: white;
+    position: relative;
+    top: 120px;
+    padding: 17px;
+    width: 50%;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: bolder;
+
+}
+
+.button button::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+    border-top: 17px solid #47d3a0;
+    border-right: 35px solid whitesmoke;
+
+}
+
+.button button:hover {
+    background-color: rgb(32, 19, 16);
+}
+
+.our {
+    height: 170px;
+    margin-top: 20px;
+}
+
+.our h1 {
+    font-family: 'merriweather';
+    font-size: 26px;
+    font-weight: normal;
+    position: relative;
+    top: 40px;
+
+}
+
+.our h1 span {
+    color: rgb(95, 1, 51);
+    font-size: 26px;
+    font-weight: normal;
+    font-family: 'merriweather', sans-serif;
+
+}
+
+.our hr {
+    display: inline-flex;
+
+    position: relative;
+    left: 620px;
+    top: 40px;
+}
+
+
+
+.viewcourses {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    /* Adjust to your image width */
+
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-text {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-size: 40px;
+
+}
+
+.overlay-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: blue;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+    background-color: rgba(5, 57, 153, 0.644);
+
+}
+
+.image-container:hover .overlay-text {
+    transform: translateY(-20px);
+}
+
+.image-container:hover .overlay-button {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    top: 60px;
+}
+
+.studentlife {
+    display: flex;
+}
+
+.slife {
+    display: flex;
+}
+
+
+.academy-container {
+    position: relative;
+
+}
+
+.academy-container img {
+    height: 400px;
+    width: 600px;
+    margin: 30px;
+
+}
+
+.over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 400px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.over-text {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'merriweather', sans-serif;
+
+}
+
+.over-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.academy-container:hover .over {
+    opacity: 1;
+    background-color: rgba(32, 81, 185, 0.5);
+
+}
+
+.academy-container:hover .over-text {
+    transform: translateY(-20px);
+}
+
+.academy-container:hover .over-button {
+    opacity: 1;
+    transform: translateY(0);
+    border: 1px solid white;
+    font-family: 'ubuntu', sans-serif;
+    color: white;
+    font-size: 13px;
+    font-weight: lighter;
+
+}
+
+.academy-container .over-button:hover {
+    background-color: #600033;
+}
+
+.campus {
+    background-image: url(baa.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.on {
+    height: 80%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.on h1,
+.on h4,
+.cam {
+    text-align: center;
+    color: white;
+    margin: 30px;
+    font-size: 18px;
+    font-weight: normal;
+
+
+}
+
+.on h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'merriweather', sans-serif;
+
+}
+
+.cam {
+    background-color: #222845;
+    padding: 10px;
+    height: auto;
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'ubuntu', sans-serif;
+
+}
+
+.srmgroup {
+    display: flex;
+    flex-direction: row;
+    background-color: #1E73BE;
+    justify-content: space-around;
+}
+
+.contact {
+    width: 33.4%;
+    display: flex;
+    background-color: #003c5a;
+    ;
+    align-items: center;
+}
+
+.two {
+    background-color: #21546e;
+}
+
+.contact i {
+    font-size: 80px;
+    margin: 20px;
+    color: #31637c;
+
+}
+
+.legacy {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin: 30px;
+}
+
+.know {
+    margin: 20px;
+    width: 100px;
+    padding: 8px;
+    background-color: #003c5a;
+    ;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+
+}
+
+.legacy h1 {
+    color: white;
+    font-family: 'merriweather', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.legacy h4 {
+    color: rgb(201, 218, 233);
+    font-family: 'ubuntu', sans-serif;
+    font-size: medium;
+    font-weight: 100;
+}
+
+.legacy h3 {
+    color: white;
+    font-family: 'merriweather', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 20px;
+
+
+}
+
+.ours {
+    height: 170px;
+    margin-top: 90px;
+}
+
+.ours h6 {
+    font-family: 'merriweather';
+    font-size: 15px;
+    font-weight: normal;
+    position: relative;
+    top: 40px;
+
+}
+
+.ours h6 span {
+    color: rgb(95, 1, 51);
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'merriweather', sans-serif;
+
+}
+
+.ours hr {
+    display: inline-flex;
+
+    position: relative;
+    left: 560px;
+    top: 40px;
+}
+
+.talk {
+    text-align: right;
+    margin-right: 280px;
+    margin-bottom: 40px;
+    color: gray;
+    font-family: 'merriweather';
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.message {
+
+    background-color: #f2f2f2;
+
+
+}
+
+.group {
+    width: 63%;
+    
+    position: relative;
+    margin-bottom: 15px;
+    background-color: white;
+    margin-left: 35%;
+}
+
+.group input {
+    width: 80%;
+    padding: 15px;
+    font-size: 15px;
+
+}
+
+.group i {
+    margin: 10px;
+    color: gray;
+
+}
+
+.groups i {
+    margin: 10px;
+    color: gray;
+}
+
+
+.groups {
+    width: 63%;
+    position: relative;
+    margin-bottom: 15px;
+    background-color: white;
+    margin-left: 35%;
+    height: 130px;
+}
+
+.groups textarea {
+    position: absolute;
+    resize: vertical;
+    width: 90%;
+    padding: 10px;
+    font-size: 15px;
+}
+.send{
+  height: 100px;
+  width: 100%;
+ 
+}
+.sbut{
+    padding: 10px;
+    background-color:#f2f2f2;
+    border: 1px solid #600033;
+    color:#600033;
+    margin: 30px;
+    margin-left: 63%;
+}
+.sbut:hover{
+    background-color: #600033;
+    color: white;
+    cursor: pointer;
+}
+.subscribe{
+    display: flex;
+    height: 100px;
+    background-color: #3E9DDC;
+}
+
+.sign{
+   display: flex;
+   width: 20%;
+   
+}
+.sign h1{
+    color: white;
+    font-size: 30px;
+    font-family: 'merriweather';
+    font-weight: 500;
+    margin-top: 30px;
+}
+.sign i{
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+    margin-left: 30px;
+}
+.signup{
+    display: flex; 
+    width: 30%;
+}
+.signup p {
+   color: white;
+   margin: 15px;
+   margin-top: 30px; 
+}
+.eminput input{
+    width: 400px;
+    padding: 15px;
+    margin-left: 0;
+    margin: 20px;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+.subsbtn{
+  background-color: #3E9DDC;
+  color: white;
+  margin-top: 30px;
+  padding: 10px;
+  width: 150px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.column1 h2{
+    font-family: 'merriweather';
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.column1 p{
+    margin: 20px;
+}
+.column2 h2{
+    font-family: 'merriweather';
+    font-size: 18px;
+    font-weight: 500;
+}
+.column2 p, i{
+    margin-bottom: 10px;
+}
+.column3{
+    line-height: 30px;
+}
+.column3 h2{
+    font-family: 'merriweather';
+    font-size: 18px;
+    font-weight: 500;
+}
+.finput input{
+    width: 50px;
+    padding: 10px;
+}
+.man{
+    font-family: 'ubuntu',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #003c5a;
+}
+.man::after{
+    content: "*";
+    color: red;
+}
+.sub{
+    padding: 13px;
+    margin: 20px;
+}
+.Quickcontact{
+ display: flex;
+ justify-content: space-around;
+ margin: 20px;
+ margin-top: 70px;
+}
+.footer{
+    height: 120px;
+}
+.copy{
+    display: flex;
+    
+}
+.copy p{
+    margin: 20px;
+    margin-left: 50%;
+    font-size: 13px;
+    font-weight: 300;
+    color: gray;
+    line-height: 25px;
+   
+}
